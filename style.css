@@ -97,6 +97,13 @@ form {
   padding: 10px;
 }
 
+form div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+
 form label {
   font-weight: bold;
 }
@@ -105,7 +112,6 @@ form select,
 form input {
   margin-bottom: 20px;
   width: 65%;
-  float: right;
 }
 
 form button {
@@ -116,7 +122,6 @@ form button {
   padding: 15px;
   width: 100%;
 }
-
 /* -------  Footer ------- */
 
 footer {
@@ -131,7 +136,23 @@ footer p {
 
 /* -------  Media Query ------- */
 
-@media all and (min-width: 600px) {
+@media all and (min-width: 480px) {
+  /* ------- Header ------- */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo {
+    font-size: 30px;
+  }
+
+  header nav ul li {
+    padding: 0 8px;
+  }
+
+@media all and (min-width: 800px) {
   header {
     background-color: #ff385c;
     display: flex;
